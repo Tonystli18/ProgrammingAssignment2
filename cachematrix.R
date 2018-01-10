@@ -5,7 +5,7 @@
 #
 
 
-# The function 'makeCacheMatrix' cache a matrix, and a list of 4 functions:
+# The function 'makeCacheMatrix' cache a matrix, and create a list of 4 functions:
 #
 #  set - set the value of 'x' which is the cached matrix
 #  get - get the cached matrix from 'x'
@@ -28,8 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 #
 # The function 'cacheSolve' either 
-#       computes the inverse matrix of the cached matrix 'x' if 'inver_m' is NULL, and cache
-#       the result to 'inver_m';
+#       computes the inverse matrix of the cached matrix 'x' if inverse matrix has not been created,
+#       and cache the result to 'inver_m';
 # or
 #       get the cached inverse matrix 'inver_m'.
 # Either way it will return the inverse matrix 'inver_m' of matrix 'x'.
